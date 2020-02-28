@@ -362,6 +362,8 @@ a:hover {
     z-index: 2;
 }
 
+    /*MEDIA QUERIES*/
+
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
@@ -700,6 +702,8 @@ p {
 }
 
 .social {
+    display: flex;      /*modifié*/
+    justify-content: space-evenly; /*modifié*/
     max-width: 400px;
     margin: auto auto auto auto;
 }
@@ -775,7 +779,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF!important; /*----corrigé--------*/
 }
 
 .btn-atomic-tangerine {
@@ -848,13 +852,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) { /*Min-device-width corrigé par min-width */
     .b-parallax {
         background-attachment: scroll;
     }
@@ -1026,17 +1030,15 @@ h4 {
         width: 180px;
         height: 320px;
     }
+
+    .bloc-mob-center-text {     /*corrigé*/
+        text-align: center;
+    }
 }
 
 @media (max-width: 400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
-    }
-}
-
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
     }
 }
