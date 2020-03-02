@@ -1,3 +1,81 @@
+/*AJOUT*/
+/*PAGE-1*/
+.a {
+    border-top: rgb(255, 157, 45) 2px solid;
+    border-bottom: rgb(255, 157, 45) 2px solid;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.a::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 207, 136);
+    height: 0%;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+    opacity: 0;
+    z-index: -1;
+}
+
+.a:hover::before {
+    height: 100%;
+    opacity: 1;
+    border-right: rgb(255, 157, 45) 2px solid;
+    border-left: rgb(255, 157, 45) 2px solid;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bgc-h2 {
+    background-color: rgb(250, 197, 137);
+    margin-bottom: 50px;
+}
+
+#T-B {
+    border-bottom: black 2px solid;
+}
+
+@media screen and (max-width: 1366px) {
+
+    .a:hover::before {
+        border-right: none;
+        border-left: none;
+    }
+    .a::before {
+        background-color: transparent;
+    }
+    .a:active::before {
+        background-color: rgb(250, 197, 137);
+        transition: all 0s;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .a {
+        border-top: none;
+        border-bottom: none;
+    }
+}
+/*PAGE-1*/
+/*PAGE-2*/
+
+.bloc-d {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*PAGE-2*/
+/*AJOUT*/
+
 body {
     margin: 0;
     padding: 0;
@@ -679,7 +757,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px; /*corrigé*/ 
 }
 
 .tight-width-whitespace {
