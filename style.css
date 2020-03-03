@@ -1,5 +1,6 @@
 /*AJOUT*/
 /*PAGE-1*/
+
 .a {
     border-top: rgb(255, 157, 45) 2px solid;
     border-bottom: rgb(255, 157, 45) 2px solid;
@@ -42,6 +43,13 @@
     border-bottom: black 2px solid;
 }
 
+#h2 {
+    position: relative;
+}
+
+.ul li:hover {
+    text-decoration: underline;
+}
 @media screen and (max-width: 1366px) {
 
     .a:hover::before {
@@ -684,14 +692,14 @@ a[data-lightbox]:hover img {
 .next-lightbox:hover,
 .prev-lightbox:hover {
     opacity: 1.0;
-    color: #FFF;
+    color: #fff;
 }
 
 .next-lightbox,
 .prev-lightbox {
     font-size: 20px;
     color: rgba(255, 255, 255, .9);
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 1);
     transition: all .2s ease-in-out;
     position: absolute;
     top: 45%;
@@ -904,7 +912,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
